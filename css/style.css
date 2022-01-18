@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    margin: 40px;
+    text-align: center;
+}
+
+.product{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.item, .pic{
+    position: relative;
+}
+
+.discount, .sustainability, .only-sustainability, .heart{
+    position: absolute;
+    z-index: 3;
+}
+
+.discount, .sustainability, .only-sustainability{
+    bottom: 30px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+    font-weight: bold;
+}
+
+
+.discount, .sustainability, .only-sustainability, .description, .price-discount{
+    font-weight: bold;
+}
+
+.discount{
+    background-color: red;
+    left: 0;
+}
+
+.sustainability, .only-sustainability{
+    background-color: seagreen;
+    z-index: 3;
+}
+
+.sustainability{
+    left: 45px;
+}
+
+.only-sustainability{
+    left: 0;
+}
+
+.heart{
+    font-size: 2em;
+    right: 0;
+    top: 20px;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.brand, .description{
+    display: block;
+}
+
+.brand{
+    font-size: 0.9em;
+}
+
+.price-discount{
+    color: red;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+.product-description{
+    text-align: left;
+}
+
+.pic, img {
+    height: 600px;
+}
+.pic .pic-hover {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+}
+.pic:hover .pic-hover {
+    display: inline;
+}
